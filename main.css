@@ -24,10 +24,11 @@ h1 {
   flex-direction: column;
 }
 
-input {
+.input {
   margin-top: 10px;
 }
 
 .addOption {
-margin-top: 10px;
+  width: 50px;
+  margin-top: 10px;
 }

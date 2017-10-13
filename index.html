@@ -10,11 +10,24 @@
     <h1>Please pick the best one </h1>
     <div class="inputSection">
       <div class="inputs">
-      <div>
         <input placeholder="Write something"></input>
       </div>
-        <button class="addOption">Add</button>
-      </div>
-      <button>Ok</button>
+      <button class="addOption">Add</button>
+    </div>
+      <div class="resultSection"></div>
+        <button>Ok</button>
+
+      <script scr="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+      </script>
   </body>
 </html>
